@@ -59,7 +59,6 @@ button {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
-  margin: 24px 1240px 25px 215px;
 }
 .logo-web {
   color: var(--accent-color);
@@ -67,9 +66,8 @@ button {
 .header .logo-studio {
   color: var(--dark-text-color);
 }
-
-a:hover,
-a:focus {
+.header a:hover,
+.header a:focus {
   color: var(--accent-color);
 }
 
@@ -93,12 +91,13 @@ a:focus {
   margin-right: 50px;
 }
 
-.main-nav-link:visited {
+/* .main-nav-link:visited {
   color: var(--accent-color);
-}
+} */
 
 .main-nav-link .current {
   border: solid 1px;
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
@@ -113,27 +112,35 @@ a:focus {
 .header-contacts-link + .header-contacts-link {
   margin-left: 50px;
 }
-
+.main-nav-link,
+.header-contacts-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 /* Section hero */
-.hero {
+.hero .container {
   text-align: center;
-
+  width: 1600;
+  height: 600;
   background-color: var(--dark-background-color);
-  color: var(--white-text-color);
+}
+.hero .title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--white-text-color);
 }
-
 .hero button {
+  margin-top: 30px;
+
   font-size: 14px;
   color: var(--white-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  position: absolute;
   width: 200px;
   height: 50px;
   padding: 5px 10px;
@@ -141,6 +148,15 @@ a:focus {
 /* Section features */
 .features {
   display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.features .item {
+  margin-right: 30px;
+  width: 270px;
+}
+.features .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features .features-title {
@@ -154,6 +170,17 @@ a:focus {
 }
 
 /* Section work  --Наша команда--*/
+.work,
+.team {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.work-list {
+  display: flex;
+}
+.work .item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .work .title,
 .team .title {
@@ -163,7 +190,15 @@ a:focus {
   line-height: 1.17;
   text-align: center;
 }
-
+.team-list {
+  display: flex;
+}
+.team-list .item {
+  width: 270px;
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 .team h3 {
   color: var(--dark-text-color);
   font-weight: 500;
@@ -196,6 +231,15 @@ footer a {
 
 /*portfolio-style*/
 
+.filter {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.filter .item {
+  margin-right: ;
+}
+
 .portfolio-projects {
   color: var(--light-text-color);
   font-size: 16px;
@@ -205,6 +249,11 @@ footer a {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .portfolio-projects button,
 .portfolio-projects p {
   text-transform: capitalize;
@@ -222,6 +271,7 @@ footer a {
   color: var(--dark-text-color);
   background: var(--light-background-color);
   border-radius: 4px;
+  border-color: var(--light-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
