@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
    <!--styles-in-->
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -10,90 +11,91 @@
 </head>
 <body>
     <header class="header">
-        <a class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-        <nav class="main-nav">
+         <nav class="main-nav container">
+            <a class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
             <ul class="main-nav-list">
                 <Li> <a class="main-nav-link" href="./index.html">студия</a> </Li>
                 <Li> <a class="main-nav-link current" href="./portfolio.html">портфолио</a> </Li>
                 <li> <a class="main-nav-link" href="#">контакты</a> </li>
             </ul>
-            <address class="header-contacts">
-                <ul>
-                    <Li> <a href="#"> info@devstudio.com </a></Li>
-                    <Li> <a href="#"> +380961111111 </a></Li>
+            <address>
+                <ul class="header-contacts">
+                    <Li class="header-contacts-link"> <a href="#"> info@devstudio.com </a></Li>
+                    <Li class="header-contacts-link"> <a href="#"> +380961111111 </a></Li>
                 </ul>
             </address>
         </nav>
-    
     </header>
     <main class="portfolio-projects">
-        <ul class="filter">
-            <li><button type="button">все</button></li>
-            <li><button type="button">веб-сайты</button></li>
-            <li><button type="button">приложения</button></li>
-            <li><button type="button">дизайн</button></li>
-            <li><button type="button">маркетинг</button></li>
-        </ul>
+        <div class="container">
+            <ul class="filter">
+                <li><button type="button">все</button></li>
+                <li><button type="button">веб-сайты</button></li>
+                <li><button type="button">приложения</button></li>
+                <li><button type="button">дизайн</button></li>
+                <li><button type="button">маркетинг</button></li>
+            </ul>
   <!--Проекты-->
-        <ul>
-            <li>
-                <a href="#"></a><img src="./images/project1.svg" alt="project1">
-                    <h2>Технокряк</h2>
-                    <p>веб-сайт</p>
+            <ul>
+               <li>
+                   <a href="#"><img src="./images/project1.svg" alt="project1">
+                       <h2 class="project-title">Технокряк</h2>
+                       <p>веб-сайт</p>
+                   </a>
+               </li>
+               <li> 
+                   <a href="#"><img src="./images/project2.svg" alt="project2">
+                       <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                        <p>дизайн</p>
+                   </a>
+                </li>
+                <li> 
+                   <a href="#"><img src="./images/project3.svg" alt="project3">
+                        <h2 class="project-title">Ресторан Seafood</h2>
+                        <p>приложение</p>
+                   </a>
+                 </li>
+                <li>                            
+                   <a href="#"><img src="./images/project4.svg" alt="project4">
+                       <h2 class="project-title">Проект Prime</h2>
+                       <p>маркетинг</p>
+                   </a>
+               </li>
+               <li>  
+                   <a href="#"><img src="./images/project5.svg" alt="project5">
+                       <h2 class="project-title">Проект Boxes</h2>
+                       <p>приложение</p>
+                   </a>
+               <li> 
+                   <a href="#"><img src="./images/project6.svg" alt="project6">
+                       <h2 class="project-title">Inspiration has no Borders</h2>
+                       <p>веб-сайт</p>
+                   </a>
+               </li>
+               <li> 
+                   <a href="#"><img src="./images/project7.svg" alt="project7">
+                      <h2 class="project-title">Издание Limited Edition</h2>
+                       <p>дизайн</p>
+                   </a>
+               </li>
+               <li> 
+                   <a href="#"><img src="./images/project8.svg" alt="project8">
+                       <h2 class="project-title">Проект LAB </h2>
+                       <p>маркетинг</p>
+                   </a>
+               </li>
+               <li>  
+                   <a href="#"><img src="./images/project9.svg" alt="project9">
+                       <h2 class="project-title">Growing Business</h2>
+                       <p>приложение</p>
                 </a>
-            </li>
-            <li> 
-                <a href="#"></a><img src="./images/project2.svg" alt="project2">
-                    <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                     <p>дизайн</p>
-                </a>
-             </li>
-             <li> 
-                <a href="#"></a><img src="./images/project3.svg" alt="project3">
-                     <h2 class="project-title">Ресторан Seafood</h2>
-                     <p>приложение</p>
-                </a>
-              </li>
-             <li>                            
-                <a href="#"></a><img src="./images/project4.svg" alt="project4">
-                    <h2 class="project-title">Проект Prime</h2>
-                    <p>маркетинг</p>
-                </a>
-            </li>
-            <li>  
-                <a href="#"></a><img src="./images/project5.svg" alt="project5">
-                    <h2 class="project-title">Проект Boxes</h2>
-                    <p>приложение</p>
-                </a>
-            <li> 
-                <a href="#"></a><img src="./images/project6.svg" alt="project6">
-                    <h2 class="project-title">Inspiration has no Borders</h2>
-                    <p>веб-сайт</p>
-                </a>
-            </li>
-            <li> 
-                <a href="#"></a><img src="./images/project7.svg" alt="project7">
-                   <h2 class="project-title">Издание Limited Edition</h2>
-                    <p>дизайн</p>
-                </a>
-            </li>
-            <li> 
-                <a href="#"></a><img src="./images/project8.svg" alt="project8">
-                    <h2 class="project-title">Проект LAB </h2>
-                    <p>маркетинг</p>
-                </a>
-            </li>
-            <li>  
-                <a href="#"><img src="./images/project9.svg" alt="project9">
-                    <h2 class="project-title">Growing Business</h2>
-                    <p>приложение</p>
-                </a>
-            </li>
-         </ul>
+                </li>
+            </ul>
+        </div>
     </main>
 
     <footer>
-        <div>
+        <div class=" footer-nav container">
             <a class="logo"><span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a>
             <address>
                 <ul>
