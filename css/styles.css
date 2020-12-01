@@ -234,10 +234,11 @@ footer a {
 .filter {
   display: block;
   display: flex;
-  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 .filter .item {
-  margin-right: ;
+  margin-right: 5px;
 }
 
 .portfolio-projects {
