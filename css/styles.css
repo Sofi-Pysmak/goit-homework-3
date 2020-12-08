@@ -362,7 +362,10 @@ footer .item {
 .projects-list .item {
   margin: 15px;
 }
-
+.projects-list a {
+  display: flex;
+  flex-direction: column;
+}
 .project-title {
   color: var(--dark-text-color);
   font-weight: 700;
